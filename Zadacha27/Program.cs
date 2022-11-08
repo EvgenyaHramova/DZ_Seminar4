@@ -7,12 +7,12 @@
 int Summa(int a)
 {
     string aNew = Math.Abs(a).ToString(); // преобразование числа в модуль и в строку 
-    int [] array = new int[aNew.Length];
-    int sum=0;
+    int[] array = new int[aNew.Length];
+    int sum = 0;
 
     for (int i = 0; i < aNew.Length; i++)
     {
-        array[i]=int.Parse(aNew[i].ToString());
+        array[i] = int.Parse(aNew[i].ToString());
         sum = sum + array[i];
     }
     return sum;
