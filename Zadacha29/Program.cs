@@ -7,10 +7,15 @@ int[] array = new int[8];
 
 for (int i = 0; i <= 7; i++) //i<array.Length
 {
-    Console.WriteLine($"Введите значение элемента массива под номером {i}: "); // -запрос массива от пользователя склавиатуры
+    Console.Write($"Введите значение элемента массива под номером {i}: "); // -запрос массива от пользователя склавиатуры
     int a = Convert.ToInt32(Console.ReadLine());
-    Console.Write($"[" + (array[i]=a)+ "," + "]");
-    
+    array[i] = a;
+       
+}
+
+for (int i = 0; i <= 7; i++) 
+{
+    Console.Write(array[i]+ ",  ");
 }
 
 
