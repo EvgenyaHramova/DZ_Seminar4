@@ -12,7 +12,10 @@ int Summa(int a)
     Console.WriteLine(aNew);
     return count;
 
-    int [] array = new int[count]{aNew};
+    int aNewInt = int.Parse(aNew);
+
+    int [] array = new int([count]{aNewInt});  //  b[i] = int.Parse(str[i].ToString());
+    //
     int sum=0;
 
     for (int i = 0; i <= count; i++)
